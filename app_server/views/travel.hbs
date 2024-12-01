@@ -19,12 +19,13 @@
                                 <ul id="sites">
                                     {{#each data }}
                                         <li>
-                                            <a href="/travel">
+                                            <a href="/api/trips/{{ this.code }}">
                                                 <img src="images/{{ this.image }}" alt="{{ this.name }}" />
                                             </a>
                                             <h2>
                                                 <a href="/travel">{{ this.name }}</a>
                                             </h2>
+                                            Code: {{ this.code }}
                                             {{{ this.description }}}
                                         </li>
                                     {{/each}}
