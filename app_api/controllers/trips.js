@@ -92,6 +92,7 @@ const tripsUpdateTrip = async (req, res) => {
     });
 };
 
+// DELETE /trips/:tripCode deletes a trip from the database
 const tripsDeleteTrip = async (req, res) => {
     console.log("Trips delete trip called");
     getUser(req, res, (req, res) => {
@@ -118,19 +119,24 @@ const tripsDeleteTrip = async (req, res) => {
             });
     });
 };
+
+// GET /user
 const getUser = async (req, res, callback) => {
+    console.log("Getting user");
     if (req.auth && req.auth.email) {
         try {
             const user = await User.findOne({ email: req.auth.email }).exec();
+            console.log("auth token found, auth email found");
             if (!user) {
                 return res.status(404).json({ message: "User not found" });
             }
-            callback(req, res, user.name);
+            return callback(req, res);
         } catch (e) {
             console.error(e);
             return res.status(401).json(e);
         }
     } else {
+        console.log("No payload or no payload email");
         return res
             .status(400)
             .json({ message: "No payload or no payload email" });

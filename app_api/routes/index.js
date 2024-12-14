@@ -11,12 +11,6 @@ const auth = jwt({
     algorithms: ["HS256"],
 });
 
-const middleware = (req, res, next) => {
-    console.log("Request:", req.method, req.url);
-    console.log("Headers:", req.headers);
-    next();
-};
-
 router
     .route("/trips")
     .get(tripsController.getTrips)
@@ -30,5 +24,6 @@ router
 
 router.route("/login").post(authController.login);
 router.route("/register").post(authController.register);
+router.route("/user").get(auth, tripsController.getUser);
 
 module.exports = router;

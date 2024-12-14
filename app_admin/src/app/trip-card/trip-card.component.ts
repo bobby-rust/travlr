@@ -20,7 +20,10 @@ export class TripCardComponent implements OnInit {
     private tripDataService: TripDataService,
   ) { }
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+    console.log(this.trip);
+    this.trip.perPerson = '$' + this.trip.perPerson;
+  }
 
   public isLoggedIn() {
     return this.authenticationService.isLoggedIn();
