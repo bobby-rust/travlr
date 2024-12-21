@@ -4,7 +4,7 @@
 
 - (Q) Compare and contrast the types of frontend development you used in your full
   stack project, including Express HTML, JavaScript, and the single-page
-  application (SPA). \\
+  application (SPA).
 
 - (A) In this course, we started out by building a static website served with an
   Express backend. The backend used the handlebars templating engine to render
@@ -13,7 +13,7 @@
   we built an admin dashboard using Angular, which uses client-side rendering to
   create a SPA.
 
-- (Q) Why did the backend use a NoSQL MongoDB database? \\
+- (Q) Why did the backend use a NoSQL MongoDB database?
 
 - (A) MongoDB is a good choice for this project because it offers flexibility in
   the structure of data. Different vacation packages may require different
@@ -24,7 +24,7 @@
 ## Functionality
 
 - (Q) How is JSON different from JavaScript and how does JSON tie together the
-  frontend and backend development pieces? \\
+  frontend and backend development pieces?
 
 - (A) JSON is not a programming language, it is a notation for specifying objects.
   JavaScript is a programming language that runs in the browser, and since the
@@ -36,7 +36,7 @@
 
 - (Q) Provide instances in the full stack process when you refactored code to
   improve functionality and efficiencies, and name the benefits that come from
-  reusable user interface (UI) components. \\
+  reusable user interface (UI) components.
 
 - (A) The first major refactor came when we stopped using static JSON files to
   pull data from. We set up a MongoDB database and connected to it using the
@@ -54,7 +54,7 @@
 - (Q) Methods for request and retrieval necessitate various types of API testing of
   endpoints, in addition to the difficulties of testing with added layers of security.
   Explain your understanding of methods, endpoints, and security in a full
-  stack application. \\
+  stack application.
 
 - (A) For the four CRUD operations create, read, update, delete, there are HTTP methods
   that correspond to each of them. To create a document, a POST request is
@@ -79,7 +79,7 @@
 
 - (Q) How has this course helped you in reaching your professional goals? What
   skills have you learned, developed, or mastered in this course to help you
-  become a more marketable candidate in your career field? \\
+  become a more marketable candidate in your career field?
 
 - (A) Throughout this course, I have gotten familiar with the Angular, which is
   a popular frontend framework used in enterprise applications. This diversifies
