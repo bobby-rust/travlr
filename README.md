@@ -2,18 +2,20 @@
 
 ## Architecture
 
-- Compare and contrast the types of frontend development you used in your full
+- (Q) Compare and contrast the types of frontend development you used in your full
   stack project, including Express HTML, JavaScript, and the single-page
   application (SPA). \\
-  In this course, we started out by building a static website served with an
+
+- (A) In this course, we started out by building a static website served with an
   Express backend. The backend used the handlebars templating engine to render
   the HTML on the server side before sending it back to the client. We then connected
   a self-hosted MongoDB database to the API to start serving dynamic data. Finally,
   we built an admin dashboard using Angular, which uses client-side rendering to
   create a SPA.
 
-- Why did the backend use a NoSQL MongoDB database? \\
-  MongoDB is a good choice for this project because it offers flexibility in
+- (Q) Why did the backend use a NoSQL MongoDB database? \\
+
+- (A) MongoDB is a good choice for this project because it offers flexibility in
   the structure of data. Different vacation packages may require different
   fields, which would add bloat to a traditional relational database.
   MongoDB also has the advantage of fast development time, which helps get the
@@ -21,9 +23,10 @@
 
 ## Functionality
 
-- How is JSON different from JavaScript and how does JSON tie together the
+- (Q) How is JSON different from JavaScript and how does JSON tie together the
   frontend and backend development pieces? \\
-  JSON is not a programming language, it is a notation for specifying objects.
+
+- (A) JSON is not a programming language, it is a notation for specifying objects.
   JavaScript is a programming language that runs in the browser, and since the
   release of Node.js, it now has a more flexible runtime environment that
   doesn't require a browser. JSON ties together the frontend and backend
@@ -31,10 +34,11 @@
   data in JSON format over the network. As a result, all popular backend
   languages have support for recognizing the JSON format.
 
-- Provide instances in the full stack process when you refactored code to
+- (Q) Provide instances in the full stack process when you refactored code to
   improve functionality and efficiencies, and name the benefits that come from
   reusable user interface (UI) components. \\
-  The first major refactor came when we stopped using static JSON files to
+
+- (A) The first major refactor came when we stopped using static JSON files to
   pull data from. We set up a MongoDB database and connected to it using the
   Mongoose ODM. This allowed us to easily update and retrieve the data
   programmatically, at the same time increasing scalability and efficiency.
@@ -47,11 +51,12 @@
 
 ## Testing
 
-- Methods for request and retrieval necessitate various types of API testing of
+- (Q) Methods for request and retrieval necessitate various types of API testing of
   endpoints, in addition to the difficulties of testing with added layers of security.
   Explain your understanding of methods, endpoints, and security in a full
   stack application. \\
-  For the four CRUD operations create, read, update, delete, there are HTTP methods
+
+- (A) For the four CRUD operations create, read, update, delete, there are HTTP methods
   that correspond to each of them. To create a document, a POST request is
   made. To read a document, a GET request is made. To update a document, a PUT
   request is made. Finally, to delete a document, a DELETE request is made. An
@@ -72,10 +77,11 @@
 
 ## Reflection
 
-- How has this course helped you in reaching your professional goals? What
+- (Q) How has this course helped you in reaching your professional goals? What
   skills have you learned, developed, or mastered in this course to help you
   become a more marketable candidate in your career field? \\
-  Throughout this course, I have gotten familiar with the Angular, which is
+
+- (A) Throughout this course, I have gotten familiar with the Angular, which is
   a popular frontend framework used in enterprise applications. This diversifies
   my skillset beyond my previous knowledge of only React. I have learned the
   handlebars templating language used in server-side rendering. Overall, these
